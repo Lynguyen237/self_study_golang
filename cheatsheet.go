@@ -196,3 +196,12 @@ os.Exit(1) // Example: exit if error
 
 func Split(s, sep string) []string // https://pkg.go.dev/strings#Split
 strings.Split("Ace, King, Queen", ",") // Split a string by separator ","
+
+// ==== go test code snippet
+func Test_SomeTest(t *testing.T) {
+
+	t.Run("Test name", func(t *testing.T) {
+		t.Parallel()
+		assert.NoErr(t, err)
+	})
+}
